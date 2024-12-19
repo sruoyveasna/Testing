@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Theme Sample Website</title>
+    <style>
+      :root {
+        --primary-color: #008080; /* Teal */
+        --secondary-color: #b2dfdb; /* Light Teal */
+        --background-color: #d1d1d1; /* Gray */
+        --content-background-color: #fff3ef; /* Peach */
+        --text-dark: #333333; /* Charcoal Gray */
+        --text-light: #ffffff; /* White */
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-dark);
+      }
+
+      header {
+        height: 200px;
+        background-color: var(--primary-color);
+        color: var(--text-light);
+        text-align: center;
+        padding: 40px 0 20px;
+        position: relative;
+      }
+
+      .logo-container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 10px);
+      }
+
+      .logo {
+        width: 120px;
+        height: 120px;
+        background-color: var(--text-light);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+
+      .khm {
+        margin-top: 130px;
+        font-size: 1.2rem;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: var(--secondary-color);
+        padding: 10px 0;
+      }
+
+      nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: var(--text-dark);
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 10px 15px;
+        text-transform: uppercase;
+      }
+
+      nav a:hover {
+        color: var(--text-light);
+        background-color: var(--primary-color);
+        border-radius: 5px;
+      }
+
+      .video-container {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--content-background-color);
+        padding: 20px;
+        width: 100%;
+      }
+
+      .video-container iframe {
+        width: 100%;
+        max-width: 800px;
+        height: 450px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <div class="logo">LOGO</div>
+      </div>
+      <h2 class="khm">សមាគមអភិវឌ្ឍសង្គមខ្មែរ</h2>
+      <h1>KHMER SOCIETY DEVELOPMENT ASSOCIATION</h1>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </body>
+</html>
